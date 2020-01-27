@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
     //===========Delegate method====
     func sendDataToViewController(myData: String) {
         self.receiveDataLabel.text = myData
@@ -24,10 +25,10 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "getDataSegue" {
-            let secondVC: SecondViewController = segue.destination as! SecondViewController
-            secondVC.delegate = self as? MyDataSendingDelegateProtocol
-        }
+    if segue.identifier == "getDataSegue" {
+        let secondVC: SecondViewController = segue.destination as! SecondViewController
+        secondVC.delegate = self as? MyDataSendingDelegateProtocol
+    }
     }
 }
 

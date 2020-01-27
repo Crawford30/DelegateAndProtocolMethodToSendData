@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-qw-Fsj">
-                                <rect key="frame" x="80" y="342" width="254" height="34"/>
+                                <rect key="frame" x="80" y="336" width="254" height="45"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="cDN-OE-6dy"/>
@@ -68,11 +68,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Send Data"/>
                                 <connections>
-                                    <action selector="sendDataButtonClicked:" destination="xkW-h8-HUl" eventType="touchUpInside" id="90N-Wi-gyU"/>
+                                    <action selector="sendDataButtonclicked:" destination="xkW-h8-HUl" eventType="touchUpInside" id="MZv-ri-9mu"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3Q-ib-Crq">
-                                <rect key="frame" x="80" y="160" width="254" height="40"/>
+                                <rect key="frame" x="80" y="160" width="254" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ff6-MD-vJU"/>
                                 </constraints>

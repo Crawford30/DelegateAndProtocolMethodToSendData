@@ -27,12 +27,23 @@ class SecondViewController: UIViewController {
     }
     
     //=============btton clicked to send data=========
-    @IBAction func sendDataButtonClicked(_ sender: Any) {
-        //===BEFORE SENDING DATA====
-        /*====== FIRST: check if the delegate is not nil, then it means its not authourised to send data=====*/
-        /*====SECOND, check if there is some data entered in  the text field, if there is no data, it doesnt make sense to perform an action of sending data=====*/
+//    @IBAction func sendDataButtonClicked(_ sender: Any) {
+//        //===BEFORE SENDING DATA====
+//        /*====== FIRST: check if the delegate is not nil, then it means its not authourised to send data=====*/
+//        /*====SECOND, check if there is some data entered in  the text field, if there is no data, it doesnt make sense to perform an action of sending data=====*/
+//
+//        if self.delegate != nil && self.dataToSendTextField.text != nil {
+//            let dataToBeSent = self.dataToSendTextField.text
+//            self.delegate?.sendDataToViewController(myData: dataToBeSent!)
+//            dismiss(animated: true, completion: nil)
+//        }
+//    }
+    
+    
+    @IBAction func sendDataButtonclicked(_ sender: Any) {
         
         if self.delegate != nil && self.dataToSendTextField.text != nil {
+            
             let dataToBeSent = self.dataToSendTextField.text
             self.delegate?.sendDataToViewController(myData: dataToBeSent!)
             dismiss(animated: true, completion: nil)
